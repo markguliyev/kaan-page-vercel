@@ -1027,11 +1027,6 @@ i {
     .nav {
         gap: 24px;
     }
-
-    .logo {
-        width: 180px;
-        height: 180px;
-    }
 }
 
 /* Mobile styles */
@@ -1156,11 +1151,6 @@ i {
         padding: 0 12px;
     }
 
-    .logo {
-        width: 45px;
-        height: 45px;
-    }
-
     /* Intro */
     .intro__title {
         font-size: clamp(1.75rem, 12vw, 40px);
@@ -1261,10 +1251,6 @@ i {
 
 /* Very small screens */
 @media screen and (max-width: 360px) {
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
 
     .intro__title {
         font-size: clamp(1.5rem, 14vw, 32px);
