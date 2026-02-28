@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaanMebelGroup</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        /* Language Modal Styles */
+        .language-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .language-modal.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .language-modal-content {
+            background: #fff;
+            padding: 40px 60px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .language-modal-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+        
+        .language-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: #1a1a1a;
+            color: #fff;
+            border-color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+        
+        .lang-btn img {
+            width: 24px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <header class="header" id="header__inner">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <img class="logo" src="./media/logo kaan.png" alt="Kaan Mebel Group">
+                </a>
+                <nav class="menu__body">
+                    <ul class="nav">
+                        <li><a data-scroll="#about" class="nav__link nav nav1" href="./intex_m_ru.html">продукция</a></li>
+                        <li><a data-scroll="#portfolio" class="nav__link nav nav2" href="#portfolio">портфолио</a></li>
+                        <li><a data-scroll="#about us" class="nav__link nav nav3" href="#about us">о нас</a></li>
+                        <li><a class="nav__link nav nav4" href="tel:+994108861010">+994 10 886 10 10</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="intro__slides">
+            <div class="intro__slide intro__slide--1"></div>
+            <div class="intro__slide intro__slide--2"></div>
+            <div class="intro__slide intro__slide--3"></div>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <div class="productstop">
+                Узнайте нашу продукцию
+            </div>
+        <div class="four_inner">
+            <div class="four_item">
+                <a href="./kitchen_ru.html">
+                    <img class="four_img" src="./media/mm1.png">
+                </a>
+                <div class="four_text">
+                    Кухня
+                </div>
+
+            </div>
+            <div class="four_item">
+                <a href="./yataq_ru.html">
+                    <img class="four_img" src="./media/mm2.png">
+                </a>
+                <div class="four_text">
+                    Спальня
+                </div>
+            </div>
+            <div class="four_item">
+                <a href="./qonaq_ru.html">
+                    <img class="four_img" src="./media/mm3.png">
+                </a>
+                <div class="four_text">
+                    Гостиная
+                </div>
+            </div>
+            <div class="four_item">
+                <a href="./tv_ru.html">
+                    <img class="four_img" src="./media/mm4.png">
+                </a>
+                <div class="four_text">
+                    ТВ тумба
+                </div>
+            </div>
+
+        </div>
+        <a href="/intex_m_ru.html" class="other">ДРУГОЕ</a>
+    </div>
+
+    <div class="video_container">
+        <video class="vid" src="./media/processfootageweb.mp4" autoplay muted loop playsinline></video>
+        <div class="video_text">
+            Мы дизайнеры, <br> строители, мыслители и творцы. <br> Превращаем идеи в мебель
+        </div>
+    </div>
+
+    <div class="pp">
+        <div class="Portfolio">
+            <div class="port">
+                Портфолио
+            </div>
+        </div>
+            <div class="portfolio" id="portfolio">
+                <a href="./zumrud_ru.html" class="img">
+                <img src="./media/portfolio/zumrud/_DSC8711.jpeg" alt="Zümrüd Residence">
+                <div class="img-overlay">
+                    <span class="overlay-title">Zümrüd Residence</span>
+                </div>
+            </a>
+
+            <a href="./cityg_ru.html" class="img">
+                <img src="./media/portfolio/cityg/11.jpg" alt="City Garden">
+                <div class="img-overlay">
+                    <span class="overlay-title">City Garden</span>
+                </div>
+            </a>
+
+            <a href="./ancora_ru.html" class="img">
+                <img src="./media/portfolio/ancora/2.png" alt="Ancora Residence">
+                <div class="img-overlay">
+                    <span class="overlay-title">Ancora Residence</span>
+                </div>
+            </a>
+            <a href="./sweet_ru.html" class="img">
+                <img src="./media/portfolio/sweet/0.jpg" alt="Sweet Laventine">
+                <div class="img-overlay">
+                    <span class="overlay-title">Sweet Laventine</span>
+                </div>
+            </a>
+            <a href="./fesil_ru.html" class="img">
+                <img src="./media/portfolio/fasel/1.jpeg" alt="Fəsil Restaurant">
+                <div class="img-overlay">
+                    <span class="overlay-title">Ресторан Fəsil</span>
+                </div>
+            </a>
+            <a href="./maize_ru.html" class="img">
+                <img src="./media/portfolio/maize/!7.jpg" alt="Maize">
+                <div class="img-overlay">
+                    <span class="overlay-title">Maize</span>
+                </div>
+            </a>
+            <a href="./aqat_ru.html" class="img">
+                <img src="./media/portfolio/aqat/1.jpeg" alt="Aqat Restaurant">
+                <div class="img-overlay">
+                    <span class="overlay-title">Ресторан Aqat</span>
+                </div>
+            </a>
+            <a href="./medical_ru.html" class="img">
+                <img src="./media/portfolio/medical/1.jpeg" alt="Medical Plaza">
+                <div class="img-overlay">
+                    <span class="overlay-title">Medical Plaza</span>
+                </div>
+            </a>
+            <a href="./avant_ru.html" class="img">
+                <img src="./media/portfolio/avant/000.jpg" alt="Avant Park">
+                <div class="img-overlay">
+                    <span class="overlay-title">Avant Park</span>
+                </div>
+            </a>
+            <a href="./villa_ru.html" class="img">
+                <img src="./media/portfolio/villagarden/1.jpeg" alt="Villa Garden">
+                <div class="img-overlay">
+                    <span class="overlay-title">Villa Garden</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="kaanab" id="about us">
+    <div class="ab_container">
+        <div class="about-us-wrapper">
+            <div class="about-company">
+                <p><b class="kn">Kaan Mebel Group</b> — современная компания, занимающаяся производством мебели для индивидуальных проектов, успешно работающая в Азербайджане.</p>
+                <p>С момента своего основания компания поставила перед собой цель создавать не просто мебель, а комфортные, со вкусом оформленные и функциональные жилые пространства. Основной принцип деятельности — сочетание качественных материалов, профессионального исполнения и индивидуального подхода к каждому клиенту.</p>
+                <p>Компания производит мебель для кухни, спальни, гостиной, прихожей, гардеробной и офисных помещений.</p>
+                <p>Kaan Mebel Group использует в своей деятельности современные технологии и надежные материалы, что обеспечивает долговечность и долголетие продукции. Каждый проект разрабатывается с учетом пожеланий заказчика, характеристик пространства и актуальных дизайнерских тенденций.</p>
+                <p>Команда профессионалов внимательно сопровождает клиентов на всех этапах — от идеи до полной реализации.</p>
+                <p>Главная цель Kaan Mebel Group — создание эстетичных и практичных интерьеров, которые делают жизнь клиентов более комфортной и приятной. Компания придает значение долгосрочному сотрудничеству, высокому уровню сервиса и устойчивому развитию.</p>
+                <p>Благодаря профессионализму, ответственности и любви к своему делу, Kaan Mebel Group завоевала доверие многочисленных клиентов и постоянно укрепляет свои позиции на мебельном рынке.</p>
+            </div>
+            <div class="about-image">
+                <img src="./media/kaanab.jpg" alt="Kaan Mebel Group">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bottom">
+        <a href="https://www.egger.com/" target="_blank" rel="noopener" aria-label="Fritz Egger">
+            <img src="./media/part/Fritz_Egger_Logo 1.svg" alt="Fritz Egger">
+        </a>
+        <a href="https://www.hettich.com/" target="_blank" rel="noopener" aria-label="Hettich">
+            <img src="./media/part/hettich-international-seeklogo.png" alt="Hettich">
+        </a>
+        <a href="https://kastamonu.ro/" target="_blank" rel="noopener" aria-label="Kastamonu">
+            <img src="./media/part/Kastamonu Romania SA_idHed5Hvvc_1.svg" alt="Kastamonu">
+        </a>
+        <a href="https://www.gtv.com.pl/" target="_blank" rel="noopener" aria-label="GTV">
+            <img src="./media/part/GTV_idTd69C5XH_2.jpeg" alt="GTV">
+        </a>
+        <a href="https://www.blum.com/" target="_blank" rel="noopener" aria-label="Blum">
+            <img src="./media/part/Blum_idNnyLxUXR_1.svg" alt="Blum">
+        </a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Поддержка</h3>
+            <p>Напишите нам</p>
+            <p><a href="mailto:kaanmebelgroup@outlook.com">kaanmebelgroup@outlook.com</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>О нас</h3>
+            <ul>
+                <li><a href="#">Условия и положения</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Адрес</h3>
+            <p>Адрес фабрики</p>
+            <p><a href="https://maps.app.goo.gl/yonkbSjYnBvpJ4L36" target="_blank" rel="noopener">Məktəbli küçəsi 4</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Подпишитесь на нас</h3>
+            <div class="social-icons">
+    <a href="https://www.instagram.com/kaanmebelgroup/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="./media/insta.png" alt="Instagram">
+    </a>
+
+    <a href="https://www.youtube.com/@KaanGroup1" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="./media/yt.png" alt="YouTube">
+    </a>
+    <a href="https://www.facebook.com/p/Kaan-Group-61573845377453/" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="./media/fb.png" alt="Facebook">
+    </a>
+</div>
+
+    
+</footer>
+
+<div class="footer-bottom">
+        <p>Дизайн Mark Guliyev</p>
+        <p>KaanMebelGroup © 2025 Все права защищены.</p>
+    </div>
+<script src="./style.js"></script>
+</body>
+
+</html>

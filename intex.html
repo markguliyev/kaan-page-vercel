@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaanMebelGroup</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        /* Language Modal Styles */
+        .language-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .language-modal.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .language-modal-content {
+            background: #fff;
+            padding: 40px 60px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .language-modal-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+        
+        .language-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: #1a1a1a;
+            color: #fff;
+            border-color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+        
+        .lang-btn img {
+            width: 24px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body style="overflow: hidden;">
+    <div class="cursor" id="cursor"></div>
+    
+    <!-- Language Chooser Modal -->
+    <div class="language-modal" id="languageModal">
+        <div class="language-modal-content">
+            <h2>Select Language</h2>
+            <div class="language-options">
+                <a href="./intex_en.html" class="lang-btn">
+                    <img src="./media/flags/uk.png" alt="English" onerror="this.style.display='none'">
+                    <span>English</span>
+                </a>
+                <a href="./intex_az.html" class="lang-btn">
+                    <img src="./media/flags/az.png" alt="Azərbaycan" onerror="this.style.display='none'">
+                    <span>Azərbaycan</span>
+                </a>
+                <a href="./intex_ru.html" class="lang-btn">
+                    <img src="./media/flags/az.png" alt="Azərbaycan" onerror="this.style.display='none'">
+                    <span>Русский</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header__inner">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <img class="logo" src="./media/logo kaan.png" alt="Kaan Mebel Group">
+                </a>
+                <nav class="menu__body">
+                    <ul class="nav">
+                        <li><a data-scroll="#about" class="nav__link nav nav1" href="./intex_m.html">products</a></li>
+                        <li><a data-scroll="#portfolio" class="nav__link nav nav2" href="./intex_p.html">portfolio</a></li>
+                        <li><a data-scroll="#about us" class="nav__link nav nav3" href="#about us">about us</a></li>
+                        <li><a class="nav__link nav nav4" href="tel:+994108861010">+994 10 886 10 10</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="intro__slides">
+            <div class="intro__slide intro__slide--1"></div>
+            <div class="intro__slide intro__slide--2"></div>
+            <div class="intro__slide intro__slide--3"></div>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <div class="productstop">
+                Get to know our products
+            </div>
+        <div class="four_inner">
+            <div class="four_item">
+                <a href="./kitchen.html">
+                    <img class="four_img" src="./media/mm1.png">
+                </a>
+                <div class="four_text">
+                    Kitchen
+                </div>
+                
+            </div>
+            <div class="four_item">
+                <a href="./yataq.html">
+                    <img class="four_img" src="./media/mm2.png">
+                </a>
+                <div class="four_text">
+                    Bedroom
+                </div>
+            </div>
+            <div class="four_item">
+                <a href="./qonaq.html">
+                    <img class="four_img" src="./media/mm3.png">
+                </a>
+                <div class="four_text">
+                    Living room
+                </div>
+            </div>
+            <div class="four_item">
+                <a href="./tv.html">
+                    <img class="four_img" src="./media/mm4.png">
+                </a>
+                <div class="four_text">
+                    TV stand
+                </div>
+            </div>
+            
+        </div>
+        <a href="/intex_m.html" class="other">OTHER</a>
+    </div>
+
+    <div class="video_container">
+        <video class="vid" src="./media/processfootageweb.mp4" autoplay muted loop playsinline></video>
+        <div class="video_text">
+            We are designers, <br> builders, thinkers and creators. <br> Turning ideas into furniture
+        </div>
+    </div>
+
+    <div class="pp">
+        <div class="Portfolio">
+            <div class="port" style="display:none">
+                Portfolio
+            </div>
+        </div>
+            <div class="portfolio" id="portfolio">
+                <a href="./zumrud.html" class="img">
+                <img src="./media/portfolio/zumrud/_DSC8711.jpeg" alt="Zümrüd Residence">
+                <div class="img-overlay">
+                    <span class="overlay-title">Zümrüd Residence</span>
+                </div>
+            </a>
+
+            <a href="./cityg.html" class="img">
+                <img src="./media/portfolio/cityg/11.jpg" alt="City Garden">
+                <div class="img-overlay">
+                    <span class="overlay-title">City Garden</span>
+                </div>
+            </a>
+
+            <a href="./ancora.html" class="img">
+                <img src="./media/portfolio/ancora/2.png" alt="Ancora Residence">
+                <div class="img-overlay">
+                    <span class="overlay-title">Ancora Residence</span>
+                </div>
+            </a>
+            <a href="./sweet.html" class="img">
+                <img src="./media/portfolio/sweet/0.jpg" alt="Sweet Laventine">
+                <div class="img-overlay">
+                    <span class="overlay-title">Sweet Laventine</span>
+                </div>
+            </a>
+            <a href="./fesil.html" class="img">
+                <img src="./media/portfolio/fasel/1.jpeg" alt="Fəsil Restaurant">
+                <div class="img-overlay">
+                    <span class="overlay-title">Fəsil Restaurant</span>
+                </div>
+            </a>
+            <a href="./maize.html" class="img">
+                <img src="./media/portfolio/maize/!7.jpg" alt="Maize">
+                <div class="img-overlay">
+                    <span class="overlay-title">Maize</span>
+                </div>
+            </a>
+            <a href="./aqat.html" class="img">
+                <img src="./media/portfolio/aqat/1.jpeg" alt="Aqat Restaurant">
+                <div class="img-overlay">
+                    <span class="overlay-title">Aqat Restaurant</span>
+                </div>
+            </a>
+            <a href="./medical.html" class="img">
+                <img src="./media/portfolio/medical/1.jpeg" alt="Medical Plaza">
+                <div class="img-overlay">
+                    <span class="overlay-title">Medical Plaza</span>
+                </div>
+            </a>
+            <a href="./avant.html" class="img">
+                <img src="./media/portfolio/avant/000.jpg" alt="Avant Park">
+                <div class="img-overlay">
+                    <span class="overlay-title">Avant Park</span>
+                </div>
+            </a>
+            <a href="./villa.html" class="img">
+                <img src="./media/portfolio/villagarden/1.jpeg" alt="Villa Garden">
+                <div class="img-overlay">
+                    <span class="overlay-title">Villa Garden</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="kaanab" id="about us">
+    <div class="ab_container"> 
+        <div class="about-us-wrapper">
+            <div class="about-company">
+                <p><b class="kn">Kaan Mebel Group</b> is a modern company engaged in furniture production for individual projects, successfully operating in Azerbaijan.</p>
+                <p>Since its inception, the company has set itself the goal of creating not just furniture, but comfortable, tasteful and functional living spaces. The main principle of activity is the combination of quality materials, professional performance and an individual approach to each customer.</p>
+                <p>The company produces furniture for kitchen, bedroom, living room, hallway, wardrobe and office spaces.</p>
+                <p>Kaan Mebel Group uses modern technologies and reliable materials in its activities, which ensures the durability and longevity of products. Each project is developed taking into account the customer's wishes, the characteristics of the space and actual design trends.</p>
+                <p>A team of professionals carefully accompanies customers at all stages from idea to full implementation.</p>
+                <p>The main goal of Kaan Mebel Group is to create aesthetic and practical interiors that make customers' lives more comfortable and pleasant. The company attaches importance to long-term cooperation, high service level and sustainable development.</p>
+                <p>Thanks to professionalism, responsibility and love for their work, Kaan Mebel Group has won the trust of numerous customers and is constantly strengthening its position in the furniture market.</p>
+            </div>
+            <div class="about-image">
+                <img src="./media/kaanab.jpg" alt="Kaan Mebel Group">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bottom">
+        <a href="https://www.egger.com/" target="_blank" rel="noopener" aria-label="Fritz Egger">
+            <img src="./media/part/Fritz_Egger_Logo 1.svg" alt="Fritz Egger">
+        </a>
+        <a href="https://www.hettich.com/" target="_blank" rel="noopener" aria-label="Hettich">
+            <img src="./media/part/hettich-international-seeklogo.png" alt="Hettich">
+        </a>
+        <a href="https://kastamonu.ro/" target="_blank" rel="noopener" aria-label="Kastamonu">
+            <img src="./media/part/Kastamonu Romania SA_idHed5Hvvc_1.svg" alt="Kastamonu">
+        </a>
+        <a href="https://www.gtv.com.pl/" target="_blank" rel="noopener" aria-label="GTV">
+            <img src="./media/part/GTV_idTd69C5XH_2.jpeg" alt="GTV">
+        </a>
+        <a href="https://www.blum.com/" target="_blank" rel="noopener" aria-label="Blum">
+            <img src="./media/part/Blum_idNnyLxUXR_1.svg" alt="Blum">
+        </a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Support</h3>
+            <p>Write to us</p>
+            <p><a href="mailto:kaanmebelgroup@outlook.com">kaanmebelgroup@outlook.com</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>About us</h3>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Address</h3>
+            <p>Factory address</p>
+            <p><a href="https://maps.app.goo.gl/yonkbSjYnBvpJ4L36" target="_blank" rel="noopener">Məktəbli küçəsi 4</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow us</h3>
+            <div class="social-icons">
+    <a href="https://www.instagram.com/kaanmebelgroup/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="./media/insta.png" alt="Instagram">
+    </a>
+
+    <a href="https://www.youtube.com/@KaanGroup1" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="./media/yt.png" alt="YouTube">
+    </a>
+    <a href="https://www.facebook.com/p/Kaan-Group-61573845377453/" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="./media/fb.png" alt="Facebook">
+    </a>
+</div>
+
+    
+</footer>
+
+<div class="footer-bottom">
+        <p>Design by Mark Guliyev</p>
+        <p>KaanMebelGroup © 2025 All rights reserved.</p>
+    </div>
+<script src="./style.js"></script>
+</body>
+
+</html>
