@@ -37,4 +37,39 @@
         var offsetTop = window.pageYOffset + rect.top - headerHeight;
         window.scrollTo({ top: Math.max(0, offsetTop), behavior: 'smooth' });
     });
+
+    // Mobile menu toggle
+    var menuIcon = document.querySelector('.menu__icon');
+    var menuBody = document.querySelector('.menu__body');
+    if (menuIcon && menuBody) {
+        menuIcon.addEventListener('click', function() {
+            menuIcon.classList.toggle('_active');
+            menuBody.classList.toggle('_active');
+            document.body.classList.toggle('_lock');
+        });
+
+        // Close menu when clicking nav links
+        var navLinks = menuBody.querySelectorAll('.nav__link');
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                menuIcon.classList.remove('_active');
+                menuBody.classList.remove('_active');
+                document.body.classList.remove('_lock');
+            });
+        });
+    }
+
+    // Hide language modal after selection
+    var languageModal = document.getElementById('languageModal');
+    if (languageModal) {
+        var langButtons = languageModal.querySelectorAll('.lang-btn');
+        langButtons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                languageModal.classList.add('hidden');
+                setTimeout(function() {
+                    languageModal.style.display = 'none';
+                }, 300);
+            });
+        });
+    }
 })();
